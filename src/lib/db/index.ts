@@ -1,5 +1,5 @@
 import {neon, neonConfig} from '@neondatabase/serverless';
-import { error } from 'console';
+// import { error } from 'console';
 import {drizzle} from 'drizzle-orm/neon-http';
 
 neonConfig.fetchConnectionCache = true

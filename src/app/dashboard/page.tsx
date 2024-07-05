@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
 import { ArrowLeft } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import CreateNoteDialog from "@/components/CreateNoteDialog";
 import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
 const Dashboardpage = (props: Props) => {
+  
   return (
     <>
       <div className="grainy min-h-screen">
@@ -35,6 +37,10 @@ const Dashboardpage = (props: Props) => {
           {/* if no notes, display this */}
           <div className="text-center">
             <h2 className="text-xl text-gray-500">You have no notes yet.</h2>
+          </div>
+          {/* display all the notes */}
+          <div className="grid sm:grid-cols-3 md:grid-cols-5 grid-cols-1 gap-3">
+            <CreateNoteDialog />
           </div>
         </div>
       </div>
