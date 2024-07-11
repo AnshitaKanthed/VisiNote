@@ -22,6 +22,7 @@ export async function generateImagePrompt(name: string){
             ],            
         });
         const data = await response.json();
+        // console.log(data);
         const image_description = data.choices[0].message.content;
         return image_description as string;
     } catch (error) {

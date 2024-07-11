@@ -15,7 +15,7 @@ const TypewriterTitle = (props: Props) => {
           .typeString("🚀 Supercharged Productivity.")
           .pauseFor(1000)
           .deleteAll()
-          .typeString("🤖 AI-Powered Insights.")
+          .typeString("🤖 Personal Note Taking Application")
           .start();
       }}
     />
